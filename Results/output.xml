@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-09-23T15:56:53.648851" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/home/citco/Desktop/test_qa_1/Tests/test.robot">
+<kw name="Launch Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:56:54.001260" level="INFO">Opening browser 'chrome' to base url 'http://marmelab.com/react-admin-demo'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<arg>options=add_argument("--start-maximized")</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-23T15:56:54.000692" elapsed="3.811658"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element_to_wait}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-23T15:56:57.817747" elapsed="0.981208"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${element_to_wait}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-23T15:56:57.812730" elapsed="0.986422"/>
+</kw>
+<arg>${website_url}</arg>
+<arg>${login_txt_username}</arg>
+<status status="PASS" start="2025-09-23T15:56:53.998777" elapsed="4.800539"/>
+</kw>
+<test id="s1-t1" name="TEST-000001" line="9">
+<kw name="Login User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:56:58.818034" level="INFO">Typing text 'demo' into text field '//*[@id=":r0:"]'.</msg>
+<arg>${login_txt_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:56:58.817426" elapsed="0.263531"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:56:59.081663" level="INFO">Typing text 'demo' into text field '//*[@id=":r2:"]'.</msg>
+<arg>${login_txt_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:56:59.081228" elapsed="0.220033"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:56:59.302039" level="INFO">Clicking button '//*[@id="root"]/div/div/form/div/button'.</msg>
+<arg>${login_btn_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:56:59.301564" elapsed="0.480814"/>
+</kw>
+<arg>${username_login}</arg>
+<arg>${password_login}</arg>
+<status status="PASS" start="2025-09-23T15:56:58.809016" elapsed="0.973576"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${nav_btn_customer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-23T15:56:59.783389" elapsed="0.338293"/>
+</kw>
+<msg time="2025-09-23T15:57:00.122006" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-09-23T15:56:59.782992" elapsed="0.339091"/>
+</kw>
+<kw name="Check Is Login">
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login Successful</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-23T15:57:00.124703" elapsed="0.001662"/>
+</kw>
+<status status="PASS" start="2025-09-23T15:57:00.124364" elapsed="0.002246"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login Failed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-09-23T15:57:00.139632" elapsed="0.000229"/>
+</kw>
+<status status="NOT RUN" start="2025-09-23T15:57:00.133382" elapsed="0.006713"/>
+</branch>
+<status status="PASS" start="2025-09-23T15:57:00.124293" elapsed="0.015911"/>
+</if>
+<arg>${status}</arg>
+<status status="PASS" start="2025-09-23T15:57:00.122604" elapsed="0.017749"/>
+</kw>
+<kw name="Get Random Users" owner="api">
+<msg time="2025-09-23T15:57:00.545534" level="INFO">&lt;bound method Response.json of &lt;Response [200]&gt;&gt;</msg>
+<msg time="2025-09-23T15:57:00.545688" level="INFO">/home/citco/robot-env/lib/python3.12/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-09-23T15:57:00.547241" level="INFO">${users} = [{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {...</msg>
+<var>${users}</var>
+<status status="PASS" start="2025-09-23T15:57:00.141004" elapsed="0.406385"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Create User">
+<kw name="Random Birthday" owner="api">
+<msg time="2025-09-23T15:57:00.551343" level="INFO">${birthday} = 1951-09-25</msg>
+<var>${birthday}</var>
+<status status="PASS" start="2025-09-23T15:57:00.550547" elapsed="0.000874"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:00.554557" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:00.554112" elapsed="2.238878"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-23T15:57:00.553263" elapsed="2.239920"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_btn_create}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-23T15:57:02.796479" elapsed="0.421849"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${customer_btn_create}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-23T15:57:02.795167" elapsed="0.423325"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:03.219154" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<arg>${customer_btn_create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:03.218728" elapsed="0.210466"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_txt_firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-23T15:57:03.429501" elapsed="0.333760"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:03.764770" level="INFO">Typing text 'Leanne' into text field '//input[@name="first_name"]'.</msg>
+<arg>${customer_txt_firstname}</arg>
+<arg>${user["name"].split(" ")[0]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:03.763556" elapsed="0.248538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:04.015614" level="INFO">Typing text 'Graham' into text field '//input[@name="last_name"]'.</msg>
+<arg>${customer_txt_lastname}</arg>
+<arg>${user["name"].split(" ")[1]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:04.012395" elapsed="0.286485"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:04.302330" level="INFO">Typing text 'Sincere@april.biz' into text field '//input[@name="email"]'.</msg>
+<arg>${customer_txt_email}</arg>
+<arg>${user["email"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:04.301033" elapsed="0.325540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:04.640220" level="INFO">Typing text '1951-09-25' into text field '//input[@name="birthday"]'.</msg>
+<arg>${customer_txt_birthday}</arg>
+<arg>${birthday}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:04.635453" elapsed="0.340783"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:04.978892" level="INFO">Typing text 'Kulas Light' into text field '//textarea[@name="address"]'.</msg>
+<arg>${customer_txt_address}</arg>
+<arg>${user["address"]["street"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:04.976609" elapsed="0.326114"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:05.304755" level="INFO">Typing text 'Gwenborough' into text field '//input[@name="city"]'.</msg>
+<arg>${customer_txt_city}</arg>
+<arg>${user["address"]["city"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:05.303311" elapsed="0.307829"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:05.613600" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${customer_txt_state}</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:05.611480" elapsed="0.230305"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:05.844192" level="INFO">Typing text '92998-3874' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${customer_txt_zipcode}</arg>
+<arg>${user["address"]["zipcode"]}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:05.842265" elapsed="0.321998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:06.165089" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${customer_txt_password}</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:06.164573" elapsed="0.272771"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:06.438080" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${customer_txt_confirm_password}</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:06.437627" elapsed="0.293464"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:06.731793" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<arg>${customer_btn_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-23T15:57:06.731385" elapsed="0.268390"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-09-23T15:57:12.306459" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-76.png"&gt;&lt;img src="selenium-screenshot-76.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-23T15:57:12.306740" level="FAIL">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-09-23T15:57:07.000173" elapsed="5.309320">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+</kw>
+<arg>${i}</arg>
+<status status="FAIL" start="2025-09-23T15:57:00.549945" elapsed="11.760375">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+</kw>
+<var name="${i}">{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'...</var>
+<status status="FAIL" start="2025-09-23T15:57:00.549451" elapsed="11.761076">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+</iter>
+<var>${i}</var>
+<value>@{users}</value>
+<status status="FAIL" start="2025-09-23T15:57:00.549002" elapsed="11.761706">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+</for>
+<doc>Testing</doc>
+<status status="FAIL" start="2025-09-23T15:56:58.799467" elapsed="13.512628">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" start="2025-09-23T15:56:53.650457" elapsed="18.663328"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="0" fail="1" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
