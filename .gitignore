@@ -13,6 +13,9 @@ report.html
 *.png
 *.log
 
+.png
+.log
+
 # Virtual environment
 venv/
 .env/
