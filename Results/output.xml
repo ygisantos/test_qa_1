@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-09-23T15:56:53.648851" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="/home/citco/Desktop/test_qa_1/Tests/test.robot">
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-09-24T16:22:59.002476" rpa="false" schemaversion="5">
+<suite id="s1" name="Final Activity" source="/home/citco/Desktop/QA Automation/test_qa_1/Tests/final_activity.robot">
 <kw name="Launch Browser" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:56:54.001260" level="INFO">Opening browser 'chrome' to base url 'http://marmelab.com/react-admin-demo'.</msg>
+<msg time="2025-09-24T16:22:59.338657" level="INFO">Opening browser 'chrome' to base url 'http://marmelab.com/react-admin-demo'.</msg>
 <arg>${url}</arg>
 <arg>chrome</arg>
 <arg>options=add_argument("--start-maximized")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-23T15:56:54.000692" elapsed="3.811658"/>
+<status status="PASS" start="2025-09-24T16:22:59.337656" elapsed="3.425549"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${element_to_wait}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-23T15:56:57.817747" elapsed="0.981208"/>
+<status status="PASS" start="2025-09-24T16:23:02.764050" elapsed="0.662245"/>
 </kw>
 <arg>5x</arg>
 <arg>.5s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${element_to_wait}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-09-23T15:56:57.812730" elapsed="0.986422"/>
+<status status="PASS" start="2025-09-24T16:23:02.763577" elapsed="0.662933"/>
 </kw>
 <arg>${website_url}</arg>
 <arg>${login_txt_username}</arg>
-<status status="PASS" start="2025-09-23T15:56:53.998777" elapsed="4.800539"/>
+<status status="PASS" start="2025-09-24T16:22:59.336214" elapsed="4.090489"/>
 </kw>
-<test id="s1-t1" name="TEST-000001" line="9">
+<test id="s1-t1" name="TEST-000001" line="8">
 <kw name="Login User">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:56:58.818034" level="INFO">Typing text 'demo' into text field '//*[@id=":r0:"]'.</msg>
+<msg time="2025-09-24T16:23:03.430795" level="INFO">Typing text 'demo' into text field '//*[@id=":r0:"]'.</msg>
 <arg>${login_txt_username}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:56:58.817426" elapsed="0.263531"/>
+<status status="PASS" start="2025-09-24T16:23:03.429691" elapsed="0.270209"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:56:59.081663" level="INFO">Typing text 'demo' into text field '//*[@id=":r2:"]'.</msg>
+<msg time="2025-09-24T16:23:03.700699" level="INFO">Typing text 'demo' into text field '//*[@id=":r2:"]'.</msg>
 <arg>${login_txt_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:56:59.081228" elapsed="0.220033"/>
+<status status="PASS" start="2025-09-24T16:23:03.700254" elapsed="0.196163"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:56:59.302039" level="INFO">Clicking button '//*[@id="root"]/div/div/form/div/button'.</msg>
+<msg time="2025-09-24T16:23:03.897200" level="INFO">Clicking button '//*[@id="root"]/div/div/form/div/button'.</msg>
 <arg>${login_btn_submit}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:56:59.301564" elapsed="0.480814"/>
+<status status="PASS" start="2025-09-24T16:23:03.896719" elapsed="0.262946"/>
 </kw>
 <arg>${username_login}</arg>
 <arg>${password_login}</arg>
-<status status="PASS" start="2025-09-23T15:56:58.809016" elapsed="0.973576"/>
+<status status="PASS" start="2025-09-24T16:23:03.428844" elapsed="0.731041"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${nav_btn_customer}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-23T15:56:59.783389" elapsed="0.338293"/>
+<status status="PASS" start="2025-09-24T16:23:04.163641" elapsed="0.399656"/>
 </kw>
-<msg time="2025-09-23T15:57:00.122006" level="INFO">${status} = True</msg>
+<msg time="2025-09-24T16:23:04.563587" level="INFO">${status} = True</msg>
 <var>${status}</var>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${nav_btn_customer}</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2025-09-23T15:56:59.782992" elapsed="0.339091"/>
+<status status="PASS" start="2025-09-24T16:23:04.163230" elapsed="0.400643"/>
 </kw>
 <kw name="Check Is Login">
 <if>
@@ -72,185 +72,3258 @@
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Login Successful</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-23T15:57:00.124703" elapsed="0.001662"/>
+<status status="PASS" start="2025-09-24T16:23:04.568168" elapsed="0.002054"/>
 </kw>
-<status status="PASS" start="2025-09-23T15:57:00.124364" elapsed="0.002246"/>
+<status status="PASS" start="2025-09-24T16:23:04.566926" elapsed="0.003442"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Login Failed</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-09-23T15:57:00.139632" elapsed="0.000229"/>
+<status status="NOT RUN" start="2025-09-24T16:23:04.571035" elapsed="0.000113"/>
 </kw>
-<status status="NOT RUN" start="2025-09-23T15:57:00.133382" elapsed="0.006713"/>
+<status status="NOT RUN" start="2025-09-24T16:23:04.570544" elapsed="0.000709"/>
 </branch>
-<status status="PASS" start="2025-09-23T15:57:00.124293" elapsed="0.015911"/>
+<status status="PASS" start="2025-09-24T16:23:04.566858" elapsed="0.004483"/>
 </if>
 <arg>${status}</arg>
-<status status="PASS" start="2025-09-23T15:57:00.122604" elapsed="0.017749"/>
+<status status="PASS" start="2025-09-24T16:23:04.566261" elapsed="0.005221"/>
 </kw>
-<kw name="Get Random Users" owner="api">
-<msg time="2025-09-23T15:57:00.545534" level="INFO">&lt;bound method Response.json of &lt;Response [200]&gt;&gt;</msg>
-<msg time="2025-09-23T15:57:00.545688" level="INFO">/home/citco/robot-env/lib/python3.12/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<kw name="Get Five Users" owner="api">
+<msg time="2025-09-24T16:23:04.856234" level="INFO">&lt;bound method Response.json of &lt;Response [200]&gt;&gt;</msg>
+<msg time="2025-09-24T16:23:04.856382" level="INFO">/home/citco/robot-env/lib/python3.12/site-packages/urllib3/connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-09-23T15:57:00.547241" level="INFO">${users} = [{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {...</msg>
+<msg time="2025-09-24T16:23:04.856720" level="INFO">${users} = [{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {...</msg>
 <var>${users}</var>
-<status status="PASS" start="2025-09-23T15:57:00.141004" elapsed="0.406385"/>
+<status status="PASS" start="2025-09-24T16:23:04.572757" elapsed="0.284045"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Create User">
+<kw name="Create User" owner="CustomerPage">
 <kw name="Random Birthday" owner="api">
-<msg time="2025-09-23T15:57:00.551343" level="INFO">${birthday} = 1951-09-25</msg>
+<msg time="2025-09-24T16:23:04.859136" level="INFO">${birthday} = 09-22-2008</msg>
 <var>${birthday}</var>
-<status status="PASS" start="2025-09-23T15:57:00.550547" elapsed="0.000874"/>
+<status status="PASS" start="2025-09-24T16:23:04.858738" elapsed="0.000472"/>
 </kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:00.554557" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<msg time="2025-09-24T16:23:04.860885" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
 <arg>${nav_btn_customer}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:00.554112" elapsed="2.238878"/>
+<status status="PASS" start="2025-09-24T16:23:04.860448" elapsed="2.207772"/>
 </kw>
 <arg>5x</arg>
 <arg>1s</arg>
 <arg>Click Element</arg>
 <arg>${nav_btn_customer}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-09-23T15:57:00.553263" elapsed="2.239920"/>
+<status status="PASS" start="2025-09-24T16:23:04.860015" elapsed="2.208382"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:07.070949" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:07.070419" elapsed="1.141104"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:08.211841" elapsed="0.042769"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:08.254910" elapsed="0.607511"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:07.069558" elapsed="1.793263"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:04.859521" elapsed="4.003594"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${customer_btn_create}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-23T15:57:02.796479" elapsed="0.421849"/>
+<status status="PASS" start="2025-09-24T16:23:08.865689" elapsed="0.075855"/>
 </kw>
 <arg>5x</arg>
 <arg>.5s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${customer_btn_create}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-09-23T15:57:02.795167" elapsed="0.423325"/>
+<status status="PASS" start="2025-09-24T16:23:08.863869" elapsed="0.077983"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:03.219154" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<msg time="2025-09-24T16:23:08.943160" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
 <arg>${customer_btn_create}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:03.218728" elapsed="0.210466"/>
+<status status="PASS" start="2025-09-24T16:23:08.942394" elapsed="0.207288"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${customer_txt_firstname}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-23T15:57:03.429501" elapsed="0.333760"/>
+<status status="PASS" start="2025-09-24T16:23:09.150039" elapsed="0.283875"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:03.764770" level="INFO">Typing text 'Leanne' into text field '//input[@name="first_name"]'.</msg>
-<arg>${customer_txt_firstname}</arg>
+<msg time="2025-09-24T16:23:09.436753" level="INFO">Typing text 'Leanne' into text field '//input[@name="first_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:09.436338" elapsed="0.216618"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:09.653173" elapsed="0.000138"/>
+</return>
+<msg time="2025-09-24T16:23:09.653675" level="INFO">${first_name} = Leanne</msg>
+<var>${first_name}</var>
 <arg>${user["name"].split(" ")[0]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:03.763556" elapsed="0.248538"/>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:09.434588" elapsed="0.219156"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:04.015614" level="INFO">Typing text 'Graham' into text field '//input[@name="last_name"]'.</msg>
-<arg>${customer_txt_lastname}</arg>
+<msg time="2025-09-24T16:23:09.660289" level="INFO">Typing text 'Graham' into text field '//input[@name="last_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:09.657622" elapsed="0.243480"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:09.901309" elapsed="0.000137"/>
+</return>
+<msg time="2025-09-24T16:23:09.901889" level="INFO">${last_name} = Graham</msg>
+<var>${last_name}</var>
 <arg>${user["name"].split(" ")[1]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:04.012395" elapsed="0.286485"/>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:09.656174" elapsed="0.247455"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:04.302330" level="INFO">Typing text 'Sincere@april.biz' into text field '//input[@name="email"]'.</msg>
-<arg>${customer_txt_email}</arg>
+<msg time="2025-09-24T16:23:09.907957" level="INFO">Typing text 'Sincere@april.biz' into text field '//input[@name="email"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:09.907500" elapsed="0.316777"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:10.224453" elapsed="0.000105"/>
+</return>
+<msg time="2025-09-24T16:23:10.224888" level="INFO">${email} = Sincere@april.biz</msg>
+<var>${email}</var>
 <arg>${user["email"]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:04.301033" elapsed="0.325540"/>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:09.904108" elapsed="0.320846"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:04.640220" level="INFO">Typing text '1951-09-25' into text field '//input[@name="birthday"]'.</msg>
-<arg>${customer_txt_birthday}</arg>
+<msg time="2025-09-24T16:23:10.226625" level="INFO">Typing text '09-22-2008' into text field '//input[@name="birthday"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:10.226123" elapsed="0.264778"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:10.491131" elapsed="0.000099"/>
+</return>
+<msg time="2025-09-24T16:23:10.491547" level="INFO">${birthday} = 09-22-2008</msg>
+<var>${birthday}</var>
 <arg>${birthday}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:04.635453" elapsed="0.340783"/>
+<arg>${customer_txt_birthday}</arg>
+<status status="PASS" start="2025-09-24T16:23:10.225333" elapsed="0.266891"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:04.978892" level="INFO">Typing text 'Kulas Light' into text field '//textarea[@name="address"]'.</msg>
-<arg>${customer_txt_address}</arg>
+<msg time="2025-09-24T16:23:10.494692" level="INFO">Typing text 'Kulas Light' into text field '//textarea[@name="address"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:10.494202" elapsed="0.257477"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:10.751852" elapsed="0.000105"/>
+</return>
+<msg time="2025-09-24T16:23:10.752327" level="INFO">${address} = Kulas Light</msg>
+<var>${address}</var>
 <arg>${user["address"]["street"]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:04.976609" elapsed="0.326114"/>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:10.492635" elapsed="0.259761"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:05.304755" level="INFO">Typing text 'Gwenborough' into text field '//input[@name="city"]'.</msg>
-<arg>${customer_txt_city}</arg>
+<msg time="2025-09-24T16:23:10.754888" level="INFO">Typing text 'Gwenborough' into text field '//input[@name="city"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:10.754417" elapsed="0.252119"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:11.006694" elapsed="0.000090"/>
+</return>
+<msg time="2025-09-24T16:23:11.007151" level="INFO">${city} = Gwenborough</msg>
+<var>${city}</var>
 <arg>${user["address"]["city"]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:05.303311" elapsed="0.307829"/>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:10.752746" elapsed="0.254468"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:05.613600" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<msg time="2025-09-24T16:23:11.008480" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:11.008098" elapsed="0.243160"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:11.251438" elapsed="0.000107"/>
+</return>
+<msg time="2025-09-24T16:23:11.251889" level="INFO">${state} = test</msg>
+<var>${state}</var>
+<arg>test</arg>
 <arg>${customer_txt_state}</arg>
-<arg>test</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:05.611480" elapsed="0.230305"/>
+<status status="PASS" start="2025-09-24T16:23:11.007531" elapsed="0.244473"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:05.844192" level="INFO">Typing text '92998-3874' into text field '//input[@name="zipcode"]'.</msg>
-<arg>${customer_txt_zipcode}</arg>
+<msg time="2025-09-24T16:23:11.254260" level="INFO">Typing text '92998-3874' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:11.253832" elapsed="0.246725"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:11.500771" elapsed="0.000137"/>
+</return>
+<msg time="2025-09-24T16:23:11.502831" level="INFO">${zipcode} = 92998-3874</msg>
+<var>${zipcode}</var>
 <arg>${user["address"]["zipcode"]}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:05.842265" elapsed="0.321998"/>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:11.252382" elapsed="0.250531"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:06.165089" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<msg time="2025-09-24T16:23:11.505573" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:11.504801" elapsed="0.210501"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:11.715472" elapsed="0.000101"/>
+</return>
+<msg time="2025-09-24T16:23:11.715884" level="INFO">${password} = test</msg>
+<var>${password}</var>
+<arg>test</arg>
 <arg>${customer_txt_password}</arg>
-<arg>test</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:06.164573" elapsed="0.272771"/>
+<status status="PASS" start="2025-09-24T16:23:11.504132" elapsed="0.211813"/>
 </kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:06.438080" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
-<arg>${customer_txt_confirm_password}</arg>
-<arg>test</arg>
+<msg time="2025-09-24T16:23:11.721866" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:06.437627" elapsed="0.293464"/>
+<status status="PASS" start="2025-09-24T16:23:11.721241" elapsed="0.248537"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:11.969955" elapsed="0.000138"/>
+</return>
+<arg>test</arg>
+<arg>${customer_txt_confirm_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:11.716298" elapsed="0.254089"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:06.731793" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<msg time="2025-09-24T16:23:11.971661" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
 <arg>${customer_btn_save}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-23T15:57:06.731385" elapsed="0.268390"/>
+<status status="PASS" start="2025-09-24T16:23:11.970798" elapsed="0.252886"/>
 </kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-09-23T15:57:12.306459" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-76.png"&gt;&lt;img src="selenium-screenshot-76.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-09-23T15:57:12.306740" level="FAIL">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</msg>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:23:14.224857" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:12.224027" elapsed="2.001215"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:14.228271" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
 <arg>${nav_btn_customer}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-09-23T15:57:07.000173" elapsed="5.309320">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:14.227540" elapsed="0.175183"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:14.226825" elapsed="0.176078"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:14.404257" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:14.403785" elapsed="0.961752"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:15.366071" elapsed="0.036419"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:15.402779" elapsed="0.550822"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:14.403266" elapsed="1.550543"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:14.225903" elapsed="1.728039"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${first_table_row}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:15.954220" elapsed="0.041152"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:15.996189" level="INFO">Clicking element '//*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]'.</msg>
+<arg>${first_table_row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:15.995703" elapsed="0.149326"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.148082" elapsed="0.268671"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.443468" level="INFO">${actual_value} = Leanne</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.417082" elapsed="0.026463"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.444164" elapsed="0.000066"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.443750" elapsed="0.000598"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.443701" elapsed="0.000719"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.444595" elapsed="0.000868"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.445954" elapsed="0.003219"/>
+</kw>
+<arg>${first_name}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.145513" elapsed="0.303901"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.451042" elapsed="0.055050"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.538561" level="INFO">${actual_value} = Graham</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.506439" elapsed="0.032208"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.539252" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.538850" elapsed="0.000552"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.538804" elapsed="0.000670"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.539659" elapsed="0.000433"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.540301" elapsed="0.000448"/>
+</kw>
+<arg>${last_name}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.450163" elapsed="0.090730"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.542300" elapsed="0.043873"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.642181" level="INFO">${actual_value} = Sincere@april.biz</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.586607" elapsed="0.055658"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.642850" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.642470" elapsed="0.000554"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.642423" elapsed="0.000676"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.643271" elapsed="0.000388"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.643959" elapsed="0.000541"/>
+</kw>
+<arg>${email}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.541302" elapsed="0.103559"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.647125" elapsed="0.042329"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.713184" level="INFO">${actual_value} = 2008-09-22</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.689738" elapsed="0.023525"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-24T16:23:16.714425" level="INFO">${expected_value} = 2008-09-22</msg>
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.713826" elapsed="0.000663"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:16.713461" elapsed="0.001126"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.713417" elapsed="0.001248"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.714854" elapsed="0.000379"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.715444" elapsed="0.000439"/>
+</kw>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<arg>True</arg>
+<status status="PASS" start="2025-09-24T16:23:16.645377" elapsed="0.070672"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.717184" elapsed="0.032717"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.773872" level="INFO">${actual_value} = Kulas Light</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.750394" elapsed="0.023557"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.774592" elapsed="0.000081"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.774171" elapsed="0.000604"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.774127" elapsed="0.000731"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.775100" elapsed="0.000471"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.775815" elapsed="0.000487"/>
+</kw>
+<arg>${address}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.716534" elapsed="0.059906"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.777473" elapsed="0.025048"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.828290" level="INFO">${actual_value} = Gwenborough</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.802951" elapsed="0.025432"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.829280" elapsed="0.000126"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.828626" elapsed="0.000906"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.828563" elapsed="0.001100"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.830041" elapsed="0.000724"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.831310" elapsed="0.000582"/>
+</kw>
+<arg>${city}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.776788" elapsed="0.055292"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.833122" elapsed="0.026291"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.883537" level="INFO">${actual_value} = test</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.859700" elapsed="0.023917"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.884218" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.883818" elapsed="0.000550"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.883773" elapsed="0.000665"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.884602" elapsed="0.000430"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.885243" elapsed="0.000489"/>
+</kw>
+<arg>${state}</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.832471" elapsed="0.053416"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.886987" elapsed="0.027901"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.940766" level="INFO">${actual_value} = 92998-3874</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.915335" elapsed="0.025509"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:16.941457" elapsed="0.000063"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:16.941081" elapsed="0.000528"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:16.941034" elapsed="0.000660"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.941896" elapsed="0.000488"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.942664" elapsed="0.000583"/>
+</kw>
+<arg>${zipcode}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.886312" elapsed="0.057103"/>
 </kw>
 <arg>${i}</arg>
-<status status="FAIL" start="2025-09-23T15:57:00.549945" elapsed="11.760375">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-09-24T16:23:04.858029" elapsed="12.085521"/>
 </kw>
 <var name="${i}">{'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'...</var>
-<status status="FAIL" start="2025-09-23T15:57:00.549451" elapsed="11.761076">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-09-24T16:23:04.857535" elapsed="12.086099"/>
+</iter>
+<iter>
+<kw name="Create User" owner="CustomerPage">
+<kw name="Random Birthday" owner="api">
+<msg time="2025-09-24T16:23:16.945241" level="INFO">${birthday} = 08-26-1972</msg>
+<var>${birthday}</var>
+<status status="PASS" start="2025-09-24T16:23:16.944898" elapsed="0.000419"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:16.946808" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.946466" elapsed="0.141474"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:16.946114" elapsed="0.142534"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:17.090078" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:17.089602" elapsed="0.862189"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:17.952206" elapsed="0.040868"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:17.993368" elapsed="0.332111"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:17.089034" elapsed="1.236627"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:16.945636" elapsed="1.380142"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_btn_create}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:18.326387" elapsed="0.039714"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${customer_btn_create}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:18.326018" elapsed="0.040286"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:18.367084" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<arg>${customer_btn_create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:18.366590" elapsed="0.197059"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_txt_firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:18.566852" elapsed="0.269206"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:18.838125" level="INFO">Typing text 'Ervin' into text field '//input[@name="first_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:18.837712" elapsed="0.171556"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:19.009466" elapsed="0.000230"/>
+</return>
+<msg time="2025-09-24T16:23:19.010163" level="INFO">${first_name} = Ervin</msg>
+<var>${first_name}</var>
+<arg>${user["name"].split(" ")[0]}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:18.836416" elapsed="0.173842"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:19.015253" level="INFO">Typing text 'Howell' into text field '//input[@name="last_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:19.014736" elapsed="0.216537"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:19.231461" elapsed="0.000105"/>
+</return>
+<msg time="2025-09-24T16:23:19.231900" level="INFO">${last_name} = Howell</msg>
+<var>${last_name}</var>
+<arg>${user["name"].split(" ")[1]}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:19.010702" elapsed="0.221298"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:19.234459" level="INFO">Typing text 'Shanna@melissa.tv' into text field '//input[@name="email"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:19.233978" elapsed="0.296492"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:19.530627" elapsed="0.000090"/>
+</return>
+<msg time="2025-09-24T16:23:19.531018" level="INFO">${email} = Shanna@melissa.tv</msg>
+<var>${email}</var>
+<arg>${user["email"]}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:19.232372" elapsed="0.298710"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:19.539780" level="INFO">Typing text '08-26-1972' into text field '//input[@name="birthday"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:19.531960" elapsed="0.306317"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:19.838450" elapsed="0.000102"/>
+</return>
+<msg time="2025-09-24T16:23:19.839016" level="INFO">${birthday} = 08-26-1972</msg>
+<var>${birthday}</var>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<status status="PASS" start="2025-09-24T16:23:19.531395" elapsed="0.307700"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:19.842092" level="INFO">Typing text 'Victor Plains' into text field '//textarea[@name="address"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:19.841498" elapsed="0.230238"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:20.071909" elapsed="0.000134"/>
+</return>
+<msg time="2025-09-24T16:23:20.072353" level="INFO">${address} = Victor Plains</msg>
+<var>${address}</var>
+<arg>${user["address"]["street"]}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:19.839485" elapsed="0.232928"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:20.074394" level="INFO">Typing text 'Wisokyburgh' into text field '//input[@name="city"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:20.073994" elapsed="0.259933"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:20.334162" elapsed="0.000105"/>
+</return>
+<msg time="2025-09-24T16:23:20.334621" level="INFO">${city} = Wisokyburgh</msg>
+<var>${city}</var>
+<arg>${user["address"]["city"]}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:20.072718" elapsed="0.261980"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:20.336263" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:20.335789" elapsed="0.216611"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:20.552560" elapsed="0.000089"/>
+</return>
+<msg time="2025-09-24T16:23:20.552933" level="INFO">${state} = test</msg>
+<var>${state}</var>
+<arg>test</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:20.335104" elapsed="0.217906"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:20.554948" level="INFO">Typing text '90566-7771' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:20.554564" elapsed="0.249260"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:20.804002" elapsed="0.000097"/>
+</return>
+<msg time="2025-09-24T16:23:20.804436" level="INFO">${zipcode} = 90566-7771</msg>
+<var>${zipcode}</var>
+<arg>${user["address"]["zipcode"]}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:20.553334" elapsed="0.251175"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:20.805991" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:20.805561" elapsed="0.220708"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:21.026424" elapsed="0.000087"/>
+</return>
+<msg time="2025-09-24T16:23:21.026788" level="INFO">${password} = test</msg>
+<var>${password}</var>
+<arg>test</arg>
+<arg>${customer_txt_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:20.804865" elapsed="0.221981"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:21.030163" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:21.028186" elapsed="0.216370"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:21.245001" elapsed="0.000118"/>
+</return>
+<arg>test</arg>
+<arg>${customer_txt_confirm_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:21.027169" elapsed="0.218231"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:21.246671" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<arg>${customer_btn_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:21.246157" elapsed="0.228063"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:23:23.475033" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:21.474520" elapsed="2.000694"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:23.476846" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:23.476456" elapsed="0.127126"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:23.476085" elapsed="0.127678"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:23.605081" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:23.604638" elapsed="0.963665"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:24.568632" elapsed="0.033689"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:24.602603" elapsed="0.579215"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:23.604129" elapsed="1.578181"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:23.475570" elapsed="1.707719"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${first_table_row}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.183936" elapsed="0.064960"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:25.250834" level="INFO">Clicking element '//*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]'.</msg>
+<arg>${first_table_row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.249825" elapsed="0.286707"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.537650" elapsed="0.297802"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:25.859219" level="INFO">${actual_value} = Ervin</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.835831" elapsed="0.023466"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:25.859943" elapsed="0.001533"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:25.859494" elapsed="0.002180"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:25.859450" elapsed="0.002359"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.862134" elapsed="0.000691"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.863154" elapsed="0.000602"/>
+</kw>
+<arg>${first_name}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:25.536991" elapsed="0.326956"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.865160" elapsed="0.058463"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:25.959423" level="INFO">${actual_value} = Howell</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.923905" elapsed="0.035596"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:25.960336" elapsed="0.000086"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:25.959882" elapsed="0.000642"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:25.959835" elapsed="0.000776"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.963377" elapsed="0.000836"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.964512" elapsed="0.001816"/>
+</kw>
+<arg>${last_name}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:25.864393" elapsed="0.102153"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:25.967766" elapsed="0.042564"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.060704" level="INFO">${actual_value} = Shanna@melissa.tv</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.012397" elapsed="0.048495"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:26.062197" elapsed="0.000100"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:26.061330" elapsed="0.001073"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.061230" elapsed="0.001259"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.062727" elapsed="0.000632"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.063736" elapsed="0.001355"/>
+</kw>
+<arg>${email}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:25.966991" elapsed="0.098309"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.067024" elapsed="0.035350"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.126869" level="INFO">${actual_value} = 1972-08-26</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.102684" elapsed="0.024277"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-24T16:23:26.128702" level="INFO">${expected_value} = 1972-08-26</msg>
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.127757" elapsed="0.001018"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:26.127208" elapsed="0.001674"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.127147" elapsed="0.001844"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.129187" elapsed="0.000365"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.129756" elapsed="0.000747"/>
+</kw>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<arg>True</arg>
+<status status="PASS" start="2025-09-24T16:23:26.065798" elapsed="0.064889"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.131718" elapsed="0.032519"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.187630" level="INFO">${actual_value} = Victor Plains</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.164518" elapsed="0.023202"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:26.188337" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:26.187921" elapsed="0.000659"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.187876" elapsed="0.000784"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.188844" elapsed="0.000434"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.189492" elapsed="0.000446"/>
+</kw>
+<arg>${address}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:26.131086" elapsed="0.059022"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.191117" elapsed="0.028955"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.242667" level="INFO">${actual_value} = Wisokyburgh</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.220355" elapsed="0.022392"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:26.243527" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:26.243120" elapsed="0.000558"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.243058" elapsed="0.000694"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.244410" elapsed="0.000486"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.245167" elapsed="0.000471"/>
+</kw>
+<arg>${city}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:26.190489" elapsed="0.055288"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.246811" elapsed="0.030842"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.304480" level="INFO">${actual_value} = test</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.279363" elapsed="0.025211"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:26.305181" elapsed="0.000081"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:26.304777" elapsed="0.000589"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.304733" elapsed="0.000717"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.305669" elapsed="0.000503"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.306434" elapsed="0.000527"/>
+</kw>
+<arg>${state}</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:26.246142" elapsed="0.061004"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.308159" elapsed="0.034262"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.368354" level="INFO">${actual_value} = 90566-7771</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.342718" elapsed="0.025716"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:26.369029" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:26.368633" elapsed="0.000554"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:26.368589" elapsed="0.000671"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.369451" elapsed="0.000389"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.370063" elapsed="0.000528"/>
+</kw>
+<arg>${zipcode}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:26.307533" elapsed="0.063226"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-09-24T16:23:16.944328" elapsed="9.426556"/>
+</kw>
+<var name="${i}">{'id': 2, 'name': 'Ervin Howell', 'username': 'Antonette', 'email': 'Shanna@melissa.tv', 'address': {'street': 'Victor Plains', 'suite': 'Suite 879', 'city': 'Wisokyburgh', 'zipcode': '90566-7771', 'g...</var>
+<status status="PASS" start="2025-09-24T16:23:16.943901" elapsed="9.427078"/>
+</iter>
+<iter>
+<kw name="Create User" owner="CustomerPage">
+<kw name="Random Birthday" owner="api">
+<msg time="2025-09-24T16:23:26.372393" level="INFO">${birthday} = 10-08-1987</msg>
+<var>${birthday}</var>
+<status status="PASS" start="2025-09-24T16:23:26.372136" elapsed="0.000315"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.373911" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.373567" elapsed="0.137021"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.373198" elapsed="0.137589"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:26.512273" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:26.511808" elapsed="0.820028"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:27.332345" elapsed="0.037729"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:27.370353" elapsed="0.570270"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:26.511277" elapsed="1.430192"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:26.372699" elapsed="1.569048"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_btn_create}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:27.943120" elapsed="0.063289"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${customer_btn_create}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:27.942238" elapsed="0.064570"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:28.008600" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<arg>${customer_btn_create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:28.007475" elapsed="0.189447"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_txt_firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:28.198385" elapsed="0.157260"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:28.357725" level="INFO">Typing text 'Clementine' into text field '//input[@name="first_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:28.357343" elapsed="0.250417"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:28.607931" elapsed="0.000118"/>
+</return>
+<msg time="2025-09-24T16:23:28.608353" level="INFO">${first_name} = Clementine</msg>
+<var>${first_name}</var>
+<arg>${user["name"].split(" ")[0]}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:28.356043" elapsed="0.252370"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:28.617495" level="INFO">Typing text 'Bauch' into text field '//input[@name="last_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:28.617038" elapsed="0.264411"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:28.881617" elapsed="0.000098"/>
+</return>
+<msg time="2025-09-24T16:23:28.882061" level="INFO">${last_name} = Bauch</msg>
+<var>${last_name}</var>
+<arg>${user["name"].split(" ")[1]}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:28.608726" elapsed="0.273405"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:28.886826" level="INFO">Typing text 'Nathan@yesenia.net' into text field '//input[@name="email"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:28.886373" elapsed="0.277349"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:29.164062" elapsed="0.000182"/>
+</return>
+<msg time="2025-09-24T16:23:29.164789" level="INFO">${email} = Nathan@yesenia.net</msg>
+<var>${email}</var>
+<arg>${user["email"]}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:28.883647" elapsed="0.281250"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:29.166879" level="INFO">Typing text '10-08-1987' into text field '//input[@name="birthday"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:29.166331" elapsed="0.251531"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:29.419197" elapsed="0.000133"/>
+</return>
+<msg time="2025-09-24T16:23:29.419684" level="INFO">${birthday} = 10-08-1987</msg>
+<var>${birthday}</var>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<status status="PASS" start="2025-09-24T16:23:29.165502" elapsed="0.254252"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:29.422163" level="INFO">Typing text 'Douglas Extension' into text field '//textarea[@name="address"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:29.421743" elapsed="0.261997"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:29.684074" elapsed="0.000157"/>
+</return>
+<msg time="2025-09-24T16:23:29.684670" level="INFO">${address} = Douglas Extension</msg>
+<var>${address}</var>
+<arg>${user["address"]["street"]}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:29.420272" elapsed="0.264501"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:29.688041" level="INFO">Typing text 'McKenziehaven' into text field '//input[@name="city"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:29.687553" elapsed="0.270818"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:29.958577" elapsed="0.000107"/>
+</return>
+<msg time="2025-09-24T16:23:29.959062" level="INFO">${city} = McKenziehaven</msg>
+<var>${city}</var>
+<arg>${user["address"]["city"]}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:29.685244" elapsed="0.273892"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:29.963345" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:29.962250" elapsed="0.222613"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:30.185171" elapsed="0.000110"/>
+</return>
+<msg time="2025-09-24T16:23:30.185616" level="INFO">${state} = test</msg>
+<var>${state}</var>
+<arg>test</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:29.959560" elapsed="0.226125"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:30.187834" level="INFO">Typing text '59590-4157' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:30.187435" elapsed="0.256291"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:30.444037" elapsed="0.000116"/>
+</return>
+<msg time="2025-09-24T16:23:30.444506" level="INFO">${zipcode} = 59590-4157</msg>
+<var>${zipcode}</var>
+<arg>${user["address"]["zipcode"]}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:30.186065" elapsed="0.258796"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:30.447248" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:30.446585" elapsed="0.240998"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:30.687761" elapsed="0.000088"/>
+</return>
+<msg time="2025-09-24T16:23:30.688166" level="INFO">${password} = test</msg>
+<var>${password}</var>
+<arg>test</arg>
+<arg>${customer_txt_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:30.445479" elapsed="0.242748"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:30.689515" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:30.689118" elapsed="0.233368"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:30.922694" elapsed="0.000110"/>
+</return>
+<arg>test</arg>
+<arg>${customer_txt_confirm_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:30.688533" elapsed="0.234689"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:30.924178" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<arg>${customer_btn_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:30.923613" elapsed="0.210054"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:23:33.135240" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:31.134170" elapsed="2.001397"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:33.140123" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:33.139259" elapsed="0.148156"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:33.137872" elapsed="0.149723"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:33.289803" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:33.289383" elapsed="0.955784"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:34.245631" elapsed="0.036723"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:34.282635" elapsed="0.583297"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:33.288118" elapsed="1.578561"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:33.136257" elapsed="1.731165"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${first_table_row}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:34.868535" elapsed="0.074502"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:34.945544" level="INFO">Clicking element '//*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]'.</msg>
+<arg>${first_table_row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:34.943906" elapsed="0.231181"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.179796" elapsed="0.273660"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.482099" level="INFO">${actual_value} = Clementine</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.453738" elapsed="0.028444"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.482764" elapsed="0.000061"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.482383" elapsed="0.000528"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.482338" elapsed="0.000664"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.483199" elapsed="0.000389"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.483796" elapsed="0.000508"/>
+</kw>
+<arg>${first_name}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.175715" elapsed="0.308847"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.486056" elapsed="0.040030"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.571950" level="INFO">${actual_value} = Bauch</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.526630" elapsed="0.045423"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.572640" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.572258" elapsed="0.000530"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.572213" elapsed="0.000649"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.573050" elapsed="0.000390"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.573761" elapsed="0.000819"/>
+</kw>
+<arg>${last_name}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.485060" elapsed="0.089704"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.578163" elapsed="0.044525"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.679689" level="INFO">${actual_value} = Nathan@yesenia.net</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.623055" elapsed="0.056744"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.680694" elapsed="0.000096"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.680105" elapsed="0.000789"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.680038" elapsed="0.000962"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.681215" elapsed="0.000468"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.681985" elapsed="0.000882"/>
+</kw>
+<arg>${email}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.575888" elapsed="0.107713"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.684818" elapsed="0.052469"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.764356" level="INFO">${actual_value} = 1987-10-08</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.737570" elapsed="0.026866"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-24T16:23:35.765656" level="INFO">${expected_value} = 1987-10-08</msg>
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.765063" elapsed="0.000657"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:35.764639" elapsed="0.001185"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.764595" elapsed="0.001307"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.766467" elapsed="0.000427"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.767153" elapsed="0.000689"/>
+</kw>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<arg>True</arg>
+<status status="PASS" start="2025-09-24T16:23:35.684060" elapsed="0.083964"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.769609" elapsed="0.036732"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.836234" level="INFO">${actual_value} = Douglas Extension</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.806757" elapsed="0.029598"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.837333" elapsed="0.000077"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.836653" elapsed="0.000850"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.836589" elapsed="0.000991"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.837776" elapsed="0.000450"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.838455" elapsed="0.000540"/>
+</kw>
+<arg>${address}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.768592" elapsed="0.070570"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.840236" elapsed="0.029943"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.903216" level="INFO">${actual_value} = McKenziehaven</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.870464" elapsed="0.032883"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.904341" elapsed="0.000080"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.903657" elapsed="0.000860"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.903587" elapsed="0.001006"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.904800" elapsed="0.000474"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.905525" elapsed="0.000700"/>
+</kw>
+<arg>${city}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.839558" elapsed="0.066911"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.907580" elapsed="0.029270"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:35.963221" level="INFO">${actual_value} = test</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.937255" elapsed="0.026085"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:35.964194" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:35.963631" elapsed="0.000720"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:35.963562" elapsed="0.000861"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.964590" elapsed="0.000478"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.965360" elapsed="0.000641"/>
+</kw>
+<arg>${state}</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.906866" elapsed="0.059331"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.967229" elapsed="0.032018"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:36.026300" level="INFO">${actual_value} = 59590-4157</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:35.999738" elapsed="0.026641"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:36.026957" elapsed="0.000084"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:36.026580" elapsed="0.000547"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:36.026536" elapsed="0.000663"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:36.027365" elapsed="0.000381"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:36.027947" elapsed="0.000502"/>
+</kw>
+<arg>${zipcode}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:35.966596" elapsed="0.062017"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-09-24T16:23:26.371634" elapsed="9.657115"/>
+</kw>
+<var name="${i}">{'id': 3, 'name': 'Clementine Bauch', 'username': 'Samantha', 'email': 'Nathan@yesenia.net', 'address': {'street': 'Douglas Extension', 'suite': 'Suite 847', 'city': 'McKenziehaven', 'zipcode': '59590...</var>
+<status status="PASS" start="2025-09-24T16:23:26.371231" elapsed="9.657599"/>
+</iter>
+<iter>
+<kw name="Create User" owner="CustomerPage">
+<kw name="Random Birthday" owner="api">
+<msg time="2025-09-24T16:23:36.030984" level="INFO">${birthday} = 08-15-2009</msg>
+<var>${birthday}</var>
+<status status="PASS" start="2025-09-24T16:23:36.030501" elapsed="0.000553"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:36.032418" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:36.032082" elapsed="0.134434"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:36.031725" elapsed="0.134971"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:36.168234" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:36.167578" elapsed="0.927973"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:37.095887" elapsed="0.090327"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:37.186515" elapsed="0.562238"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:36.167061" elapsed="1.581959"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:36.031322" elapsed="1.717893"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_btn_create}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:37.750055" elapsed="0.035101"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${customer_btn_create}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:37.749525" elapsed="0.035851"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:37.786224" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<arg>${customer_btn_create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:37.785707" elapsed="0.221962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_txt_firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:38.010056" elapsed="0.328701"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:38.352812" level="INFO">Typing text 'Patricia' into text field '//input[@name="first_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:38.351894" elapsed="0.339757"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:38.691871" elapsed="0.000126"/>
+</return>
+<msg time="2025-09-24T16:23:38.692339" level="INFO">${first_name} = Patricia</msg>
+<var>${first_name}</var>
+<arg>${user["name"].split(" ")[0]}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:38.347214" elapsed="0.345199"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:38.695711" level="INFO">Typing text 'Lebsack' into text field '//input[@name="last_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:38.695198" elapsed="0.212922"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:38.908421" elapsed="0.000239"/>
+</return>
+<msg time="2025-09-24T16:23:38.909245" level="INFO">${last_name} = Lebsack</msg>
+<var>${last_name}</var>
+<arg>${user["name"].split(" ")[1]}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:38.692890" elapsed="0.216486"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:38.915874" level="INFO">Typing text 'Julianne.OConner@kory.org' into text field '//input[@name="email"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:38.915080" elapsed="0.335025"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:39.250281" elapsed="0.000101"/>
+</return>
+<msg time="2025-09-24T16:23:39.250720" level="INFO">${email} = Julianne.OConner@kory.org</msg>
+<var>${email}</var>
+<arg>${user["email"]}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:38.909805" elapsed="0.340987"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:39.253119" level="INFO">Typing text '08-15-2009' into text field '//input[@name="birthday"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:39.252704" elapsed="0.213562"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:39.466443" elapsed="0.000108"/>
+</return>
+<msg time="2025-09-24T16:23:39.466886" level="INFO">${birthday} = 08-15-2009</msg>
+<var>${birthday}</var>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<status status="PASS" start="2025-09-24T16:23:39.252027" elapsed="0.214933"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:39.469759" level="INFO">Typing text 'Hoeger Mall' into text field '//textarea[@name="address"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:39.469351" elapsed="0.229721"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:39.699249" elapsed="0.000106"/>
+</return>
+<msg time="2025-09-24T16:23:39.699706" level="INFO">${address} = Hoeger Mall</msg>
+<var>${address}</var>
+<arg>${user["address"]["street"]}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:39.467719" elapsed="0.232066"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:39.707640" level="INFO">Typing text 'South Elvis' into text field '//input[@name="city"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:39.703625" elapsed="0.373904"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:40.077706" elapsed="0.000104"/>
+</return>
+<msg time="2025-09-24T16:23:40.078172" level="INFO">${city} = South Elvis</msg>
+<var>${city}</var>
+<arg>${user["address"]["city"]}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:39.702183" elapsed="0.376064"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:40.082201" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:40.081278" elapsed="0.202187"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:40.283623" elapsed="0.000088"/>
+</return>
+<msg time="2025-09-24T16:23:40.284301" level="INFO">${state} = test</msg>
+<var>${state}</var>
+<arg>test</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:40.078590" elapsed="0.205780"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:40.286318" level="INFO">Typing text '53919-4257' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:40.285917" elapsed="0.248700"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:40.534793" elapsed="0.000098"/>
+</return>
+<msg time="2025-09-24T16:23:40.535290" level="INFO">${zipcode} = 53919-4257</msg>
+<var>${zipcode}</var>
+<arg>${user["address"]["zipcode"]}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:40.284677" elapsed="0.250687"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:40.536870" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:40.536471" elapsed="0.205108"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:40.741775" elapsed="0.000123"/>
+</return>
+<msg time="2025-09-24T16:23:40.742324" level="INFO">${password} = test</msg>
+<var>${password}</var>
+<arg>test</arg>
+<arg>${customer_txt_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:40.535764" elapsed="0.206660"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:40.744293" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:40.743765" elapsed="0.301801"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:41.045726" elapsed="0.000089"/>
+</return>
+<arg>test</arg>
+<arg>${customer_txt_confirm_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:40.742857" elapsed="0.303218"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:41.046683" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<arg>${customer_btn_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:41.046321" elapsed="0.245074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:23:43.293796" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:41.293133" elapsed="2.001094"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:43.298348" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:43.297561" elapsed="0.151009"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:43.296732" elapsed="0.152023"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:43.453106" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:43.449781" elapsed="0.928710"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:44.378783" elapsed="0.032955"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:44.413068" elapsed="0.586872"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:43.449246" elapsed="1.551221"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:43.294997" elapsed="1.705757"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${first_table_row}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.001263" elapsed="0.067690"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.070723" level="INFO">Clicking element '//*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]'.</msg>
+<arg>${first_table_row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.069709" elapsed="0.171656"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.248310" elapsed="0.266888"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.539874" level="INFO">${actual_value} = Patricia</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.515486" elapsed="0.024505"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.542205" elapsed="0.000102"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.540380" elapsed="0.002039"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.540270" elapsed="0.002236"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.542730" elapsed="0.000549"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.543565" elapsed="0.000607"/>
+</kw>
+<arg>${first_name}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.245282" elapsed="0.299078"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.545724" elapsed="0.054865"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.638442" level="INFO">${actual_value} = Lebsack</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.600888" elapsed="0.037637"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.639126" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.638728" elapsed="0.000592"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.638682" elapsed="0.000718"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.639610" elapsed="0.000572"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.640654" elapsed="0.002852"/>
+</kw>
+<arg>${last_name}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.544790" elapsed="0.098924"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.644909" elapsed="0.042360"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.736435" level="INFO">${actual_value} = Julianne.OConner@kory.org</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.687570" elapsed="0.048943"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.737093" elapsed="0.000066"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.736709" elapsed="0.000533"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.736667" elapsed="0.000647"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.737503" elapsed="0.000386"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.738105" elapsed="0.000447"/>
+</kw>
+<arg>${email}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.644157" elapsed="0.094540"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.739948" elapsed="0.045358"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.813169" level="INFO">${actual_value} = 2009-08-15</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.785595" elapsed="0.027652"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-24T16:23:45.814555" level="INFO">${expected_value} = 2009-08-15</msg>
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.813827" elapsed="0.000797"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:45.813444" elapsed="0.001511"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.813400" elapsed="0.001673"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.815282" elapsed="0.000395"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.815894" elapsed="0.001114"/>
+</kw>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<arg>True</arg>
+<status status="PASS" start="2025-09-24T16:23:45.739113" elapsed="0.078080"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.818556" elapsed="0.043371"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.884691" level="INFO">${actual_value} = Hoeger Mall</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.862231" elapsed="0.022541"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.885381" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.884995" elapsed="0.000538"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.884927" elapsed="0.000678"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.885772" elapsed="0.000401"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.886379" elapsed="0.000442"/>
+</kw>
+<arg>${address}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.817579" elapsed="0.069404"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.888019" elapsed="0.029332"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.940841" level="INFO">${actual_value} = South Elvis</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.917644" elapsed="0.023277"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.941534" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.941149" elapsed="0.000537"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.941104" elapsed="0.000653"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.941924" elapsed="0.000412"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.942547" elapsed="0.000463"/>
+</kw>
+<arg>${city}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.887386" elapsed="0.055773"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.944199" elapsed="0.025056"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:45.993867" level="INFO">${actual_value} = test</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.969539" elapsed="0.024407"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:45.994543" elapsed="0.000062"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:45.994168" elapsed="0.000523"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:45.994121" elapsed="0.000642"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.994929" elapsed="0.000413"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.995589" elapsed="0.000484"/>
+</kw>
+<arg>${state}</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.943551" elapsed="0.052681"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:45.997275" elapsed="0.030658"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:46.050500" level="INFO">${actual_value} = 53919-4257</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.028237" elapsed="0.022344"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:46.051178" elapsed="0.000064"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:46.050784" elapsed="0.000542"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:46.050739" elapsed="0.000659"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.051582" elapsed="0.000395"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.052182" elapsed="0.001021"/>
+</kw>
+<arg>${zipcode}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:45.996630" elapsed="0.056774"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-09-24T16:23:36.029748" elapsed="10.024397"/>
+</kw>
+<var name="${i}">{'id': 4, 'name': 'Patricia Lebsack', 'username': 'Karianne', 'email': 'Julianne.OConner@kory.org', 'address': {'street': 'Hoeger Mall', 'suite': 'Apt. 692', 'city': 'South Elvis', 'zipcode': '53919-4...</var>
+<status status="PASS" start="2025-09-24T16:23:36.029175" elapsed="10.025106"/>
+</iter>
+<iter>
+<kw name="Create User" owner="CustomerPage">
+<kw name="Random Birthday" owner="api">
+<msg time="2025-09-24T16:23:46.056001" level="INFO">${birthday} = 04-22-1976</msg>
+<var>${birthday}</var>
+<status status="PASS" start="2025-09-24T16:23:46.055682" elapsed="0.000384"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:46.057517" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.057169" elapsed="0.138335"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.056795" elapsed="0.138890"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:46.199256" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:46.196545" elapsed="0.825243"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.022112" elapsed="0.044773"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.067196" elapsed="0.603452"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:46.196044" elapsed="1.474995"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:46.056356" elapsed="1.614936"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_btn_create}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.673870" elapsed="0.065819"/>
+</kw>
+<arg>5x</arg>
+<arg>.5s</arg>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${customer_btn_create}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.672872" elapsed="0.068791"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:47.744528" level="INFO">Clicking element '//a[@aria-label="Create"]'.</msg>
+<arg>${customer_btn_create}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.743206" elapsed="0.140309"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${customer_txt_firstname}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:47.883818" elapsed="0.149516"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:48.037332" level="INFO">Typing text 'Chelsey' into text field '//input[@name="first_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:48.036893" elapsed="0.211627"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:48.248697" elapsed="0.000105"/>
+</return>
+<msg time="2025-09-24T16:23:48.249481" level="INFO">${first_name} = Chelsey</msg>
+<var>${first_name}</var>
+<arg>${user["name"].split(" ")[0]}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:48.033691" elapsed="0.215868"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:48.251660" level="INFO">Typing text 'Dietrich' into text field '//input[@name="last_name"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:48.251258" elapsed="0.233983"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:48.485419" elapsed="0.000103"/>
+</return>
+<msg time="2025-09-24T16:23:48.485855" level="INFO">${last_name} = Dietrich</msg>
+<var>${last_name}</var>
+<arg>${user["name"].split(" ")[1]}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:48.249893" elapsed="0.236033"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:48.489644" level="INFO">Typing text 'Lucio_Hettinger@annie.ca' into text field '//input[@name="email"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:48.488885" elapsed="0.298717"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:48.787773" elapsed="0.000097"/>
+</return>
+<msg time="2025-09-24T16:23:48.788241" level="INFO">${email} = Lucio_Hettinger@annie.ca</msg>
+<var>${email}</var>
+<arg>${user["email"]}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:48.486307" elapsed="0.302006"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:48.790214" level="INFO">Typing text '04-22-1976' into text field '//input[@name="birthday"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:48.789460" elapsed="0.208629"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:48.998265" elapsed="0.000101"/>
+</return>
+<msg time="2025-09-24T16:23:48.998703" level="INFO">${birthday} = 04-22-1976</msg>
+<var>${birthday}</var>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<status status="PASS" start="2025-09-24T16:23:48.788651" elapsed="0.210127"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:49.001509" level="INFO">Typing text 'Skiles Walks' into text field '//textarea[@name="address"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:49.000861" elapsed="0.231789"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:49.232888" elapsed="0.000179"/>
+</return>
+<msg time="2025-09-24T16:23:49.235245" level="INFO">${address} = Skiles Walks</msg>
+<var>${address}</var>
+<arg>${user["address"]["street"]}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:48.999169" elapsed="0.236160"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:49.242115" level="INFO">Typing text 'Roscoeview' into text field '//input[@name="city"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:49.240849" elapsed="0.231703"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:49.472802" elapsed="0.000189"/>
+</return>
+<msg time="2025-09-24T16:23:49.473531" level="INFO">${city} = Roscoeview</msg>
+<var>${city}</var>
+<arg>${user["address"]["city"]}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:49.235673" elapsed="0.237988"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:49.477705" level="INFO">Typing text 'test' into text field '//input[@name="stateAbbr"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:49.477180" elapsed="0.205477"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:49.682848" elapsed="0.000097"/>
+</return>
+<msg time="2025-09-24T16:23:49.683268" level="INFO">${state} = test</msg>
+<var>${state}</var>
+<arg>test</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:49.476148" elapsed="0.207181"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:49.685270" level="INFO">Typing text '33263' into text field '//input[@name="zipcode"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:49.684858" elapsed="0.201527"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:49.886623" elapsed="0.000273"/>
+</return>
+<msg time="2025-09-24T16:23:49.887462" level="INFO">${zipcode} = 33263</msg>
+<var>${zipcode}</var>
+<arg>${user["address"]["zipcode"]}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:49.683636" elapsed="0.204065"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:49.889391" level="INFO">Typing text 'test' into text field '//input[@name="password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:49.888731" elapsed="0.226145"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:50.115080" elapsed="0.000102"/>
+</return>
+<msg time="2025-09-24T16:23:50.115510" level="INFO">${password} = test</msg>
+<var>${password}</var>
+<arg>test</arg>
+<arg>${customer_txt_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:49.888127" elapsed="0.227451"/>
+</kw>
+<kw name="Set Variable And Input Text" owner="CustomerPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:50.117498" level="INFO">Typing text 'test' into text field '//input[@name="confirm_password"]'.</msg>
+<arg>${element_to_input}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:50.116844" elapsed="0.236445"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2025-09-24T16:23:50.353497" elapsed="0.000112"/>
+</return>
+<arg>test</arg>
+<arg>${customer_txt_confirm_password}</arg>
+<status status="PASS" start="2025-09-24T16:23:50.115927" elapsed="0.237931"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:50.354521" level="INFO">Clicking element '//button[@aria-label="Save"]'.</msg>
+<arg>${customer_btn_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:50.354148" elapsed="0.204799"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:23:52.559912" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:50.559287" elapsed="2.001003"/>
+</kw>
+<kw name="Go To Customer Page" owner="CustomerPage">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:52.563367" level="INFO">Clicking element '//a[@href="#/customers"]'.</msg>
+<arg>${nav_btn_customer}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:52.562663" elapsed="0.148139"/>
+</kw>
+<arg>5x</arg>
+<arg>1s</arg>
+<arg>Click Element</arg>
+<arg>${nav_btn_customer}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-09-24T16:23:52.561941" elapsed="0.150484"/>
+</kw>
+<kw name="Refresh Current Page" owner="App">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:52.714923" level="INFO">Clicking button '//button[@aria-label="Refresh"]'.</msg>
+<arg>${btn_refresh}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:52.714505" elapsed="0.955840"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:53.670685" elapsed="0.058118"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>${loading_icon}</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:53.729221" elapsed="0.591397"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:52.712832" elapsed="1.608541"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:52.560949" elapsed="1.761435"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${first_table_row}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.323028" elapsed="0.084839"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:54.409532" level="INFO">Clicking element '//*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table/tbody/tr[1]'.</msg>
+<arg>${first_table_row}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.408598" elapsed="0.201065"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.611209" elapsed="0.273054"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:54.911095" level="INFO">${actual_value} = Chelsey</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.884546" elapsed="0.026625"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:54.911767" elapsed="0.000065"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:54.911378" elapsed="0.000543"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:54.911330" elapsed="0.000680"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.912232" elapsed="0.000402"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.912850" elapsed="0.000770"/>
+</kw>
+<arg>${first_name}</arg>
+<arg>${customer_txt_firstname}</arg>
+<status status="PASS" start="2025-09-24T16:23:54.610180" elapsed="0.303622"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.914837" elapsed="0.051658"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.001350" level="INFO">${actual_value} = Dietrich</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:54.966779" elapsed="0.034655"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.002062" elapsed="0.000067"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.001637" elapsed="0.000581"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.001593" elapsed="0.000699"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.002465" elapsed="0.000380"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.003394" elapsed="0.000547"/>
+</kw>
+<arg>${last_name}</arg>
+<arg>${customer_txt_lastname}</arg>
+<status status="PASS" start="2025-09-24T16:23:54.914215" elapsed="0.089972"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.006567" elapsed="0.044116"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.094884" level="INFO">${actual_value} = Lucio_Hettinger@annie.ca</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.051099" elapsed="0.043904"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.096620" elapsed="0.000081"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.096166" elapsed="0.000639"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.096107" elapsed="0.000785"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.097154" elapsed="0.000459"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.097888" elapsed="0.000893"/>
+</kw>
+<arg>${email}</arg>
+<arg>${customer_txt_email}</arg>
+<status status="PASS" start="2025-09-24T16:23:55.004644" elapsed="0.094409"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.100207" elapsed="0.041590"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.166137" level="INFO">${actual_value} = 1976-04-22</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.142107" elapsed="0.024109"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-24T16:23:55.167368" level="INFO">${expected_value} = 1976-04-22</msg>
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.166785" elapsed="0.000647"/>
+</kw>
+<status status="PASS" start="2025-09-24T16:23:55.166413" elapsed="0.001117"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.166370" elapsed="0.001234"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.167798" elapsed="0.000375"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.168380" elapsed="0.000437"/>
+</kw>
+<arg>${birthday}</arg>
+<arg>${customer_txt_birthday}</arg>
+<arg>True</arg>
+<status status="PASS" start="2025-09-24T16:23:55.099466" elapsed="0.069864"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.170464" elapsed="0.030618"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.229583" level="INFO">${actual_value} = Skiles Walks</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.201981" elapsed="0.027689"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.230339" elapsed="0.000063"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.229906" elapsed="0.000585"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.229833" elapsed="0.000733"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.230780" elapsed="0.000409"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.231403" elapsed="0.000644"/>
+</kw>
+<arg>${address}</arg>
+<arg>${customer_txt_address}</arg>
+<status status="PASS" start="2025-09-24T16:23:55.169711" elapsed="0.062505"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.233462" elapsed="0.031475"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.288224" level="INFO">${actual_value} = Roscoeview</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.265451" elapsed="0.022855"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.288922" elapsed="0.000079"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.288514" elapsed="0.000582"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.288468" elapsed="0.000705"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.289355" elapsed="0.000553"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.290204" elapsed="0.000974"/>
+</kw>
+<arg>${city}</arg>
+<arg>${customer_txt_city}</arg>
+<status status="PASS" start="2025-09-24T16:23:55.232586" elapsed="0.058785"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.292565" elapsed="0.031537"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.346708" level="INFO">${actual_value} = test</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.324392" elapsed="0.022395"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.347391" elapsed="0.000073"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.347006" elapsed="0.000560"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.346944" elapsed="0.000841"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.348058" elapsed="0.000516"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.349083" elapsed="0.000667"/>
+</kw>
+<arg>${state}</arg>
+<arg>${customer_txt_state}</arg>
+<status status="PASS" start="2025-09-24T16:23:55.291790" elapsed="0.058230"/>
+</kw>
+<kw name="Verify User Is Added" owner="CustomerPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.351039" elapsed="0.031259"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<msg time="2025-09-24T16:23:55.406277" level="INFO">${actual_value} = 33263</msg>
+<var>${actual_value}</var>
+<arg>${element}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.382581" elapsed="0.023777"/>
+</kw>
+<if>
+<branch type="IF" condition="${isDate} == True">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${expected_value}</var>
+<arg>'{}-{}-{}'.format("${expected_value}".split("-")[2], "${expected_value}".split("-")[0], "${expected_value}".split("-")[1])</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2025-09-24T16:23:55.407179" elapsed="0.000087"/>
+</kw>
+<status status="NOT RUN" start="2025-09-24T16:23:55.406681" elapsed="0.000695"/>
+</branch>
+<status status="PASS" start="2025-09-24T16:23:55.406533" elapsed="0.000929"/>
+</if>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${actual_value}</arg>
+<arg>${expected_value}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.407683" elapsed="0.000457"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"\nVerified: ${element} = ${actual_value}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.408368" elapsed="0.000495"/>
+</kw>
+<arg>${zipcode}</arg>
+<arg>${customer_txt_zipcode}</arg>
+<status status="PASS" start="2025-09-24T16:23:55.350409" elapsed="0.058632"/>
+</kw>
+<arg>${i}</arg>
+<status status="PASS" start="2025-09-24T16:23:46.055071" elapsed="9.354111"/>
+</kw>
+<var name="${i}">{'id': 5, 'name': 'Chelsey Dietrich', 'username': 'Kamren', 'email': 'Lucio_Hettinger@annie.ca', 'address': {'street': 'Skiles Walks', 'suite': 'Suite 351', 'city': 'Roscoeview', 'zipcode': '33263', '...</var>
+<status status="PASS" start="2025-09-24T16:23:46.054549" elapsed="9.354716"/>
 </iter>
 <var>${i}</var>
 <value>@{users}</value>
-<status status="FAIL" start="2025-09-23T15:57:00.549002" elapsed="11.761706">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+<status status="PASS" start="2025-09-24T16:23:04.857093" elapsed="50.552275"/>
 </for>
-<doc>Testing</doc>
-<status status="FAIL" start="2025-09-23T15:56:58.799467" elapsed="13.512628">Text '//a[@href="#/customers"]' did not appear in 5 seconds.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-24T16:25:35.410692" level="INFO">Slept 1 minute 40 seconds.</msg>
+<arg>100s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-24T16:23:55.409727" elapsed="100.001157"/>
+</kw>
+<doc>TASK 1: ADD FIRST 5 USERS</doc>
+<status status="PASS" start="2025-09-24T16:23:03.426859" elapsed="151.984414"/>
 </test>
-<status status="FAIL" start="2025-09-23T15:56:53.650457" elapsed="18.663328"/>
+<status status="PASS" start="2025-09-24T16:22:59.004105" elapsed="156.410984"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test" id="s1" pass="0" fail="1" skip="0">Test</stat>
+<stat name="Final Activity" id="s1" pass="1" fail="0" skip="0">Final Activity</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-09-24T16:22:59.332582" level="WARN">Error in file '/home/citco/Desktop/QA Automation/test_qa_1/Resources/CustomerPage.resource' on line 53: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
