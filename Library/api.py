@@ -1,8 +1,9 @@
 import requests
 import random
 
-def get_five_users():
-    response = requests.get("https://jsonplaceholder.typicode.com/users?_limit=5", verify=False)
+user_count = 5
+def get_five_users(page=1):
+    response = requests.get(f"https://jsonplaceholder.typicode.com/users?_limit={user_count}&_page={page}", verify=False)
     print(response.json)
     return response.json()
 
